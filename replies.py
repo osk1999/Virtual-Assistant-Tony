@@ -42,13 +42,6 @@ def tellTheTime():
     currentMinute = time.strftime("%M")
     return f"The time is {currentHour} and {currentMinute} minutes"
 
-#It's go time
-def gotime():
-    options = Options()
-    options.add_experimental_option("detach", True)
-    driver = webdriver.Chrome(options=options)
-    driver.maximize_window()
-    driver.get("https://www.pornhub.com/video/search?search=lana+rhoades")
 
 #LLM model response
 llm = Llama(
