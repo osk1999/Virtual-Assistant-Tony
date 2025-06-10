@@ -30,10 +30,6 @@ def main():
         if search(r"\b(time)\b", command) and "it's go time" not in command:
             engine.say(replies.tellTheTime())
             speak()
-        if "it's go time" in command:
-            engine.say("Starting...")
-            speak()
-            replies.gotime()
         if search(r"\btony\b", command):
             engine.say("How you doin?")
             speak()
